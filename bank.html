@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bank</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+     <header>
+          <h1 class="text-center text-5xl text-center mt-10 uppercase">let's get some <span
+                    class="text-violet-500 font-semibold">Moooooooney!!!</span></h1>
+     </header>
+     <main>
+          <section>
+               <div class="container">
+                    <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-10">
+                         <!-- Deposit part start -->
+                         <div class="bg-orange-300 p-8 rounded">
+                              <h4 class="text-2xl text-white capitalize">Deposit</h4>
+                              <h2 class="text-5xl font-semibold text-white">$<span id="moneydeposit">00</span></h2>
+                         </div>
+                         <!-- Deposit part end -->
+
+                         <!-- WithDraw part start -->
+                         <div class="bg-amber-300 p-8 rounded">
+                              <h4 class="text-2xl text-white capitalize">WithDraw</h4>
+                              <h2 class="text-5xl font-semibold text-white">$<span id="moneyWithDraw">00</span></h2>
+                         </div>
+                        <!-- WithDraw part end -->
+
+                        <!-- Balance part start -->
+                         <div class="bg-sky-900 p-8 rounded">
+                              <h4 class="text-2xl text-white capitalize">Balance</h4>
+                              <h2 class="text-5xl font-semibold text-white">$<span id="moneyBalance">1240</span></h2>
+                         </div>
+                         <!-----------------------
+                               Balance part start 
+                         ----------------------------->
+
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-16">
+                         <!-- please Deposit part start -->
+                         <div class="bg-amber-300 p-8 rounded">
+                              <h4 class="text-2xl text-white capitalize">please Deposit</h4>
+                              <input id="input-deposit" type="text" name=""  class="w-9/12 block my-3 py-2 px-1 text-1xl"
+                                   placeholder="$ Amount Your want To Deposit">
+                              <button id="btn-Deposit"
+                                   class="bg-sky-500	text-white py-2 px-5 mt-3  text-1xl uppercase font-semibold rounded hover:bg-sky-600">Deposit</button>
+                         
+                         </div>
+                         <!-- please Deposit part end -->
+                         
+                         <!-- please WithDraw part start -->
+                         <div class="bg-blue-500	 p-8 rounded">
+                              <h4 class="text-2xl text-white capitalize">please WithDraw</h4>
+                              <input type="text" name="" id="input-withdraw" class="w-9/12 block my-3 py-2 px-1 text-1xl"
+                                   placeholder="$ Amount Your want To WithDraw">
+                              <button id="btn-WithDraw"
+                                   class="bg-gray-900 py-2 px-5 text-1xl mt-3 uppercase font-semibold rounded hover:bg-slate-800 text-white">WithDraw</button>
+                         </div>
+                         <!-- please WithDraw part end -->
+                    </div>
+               </div>
+          </section>
+     </main>
+     <script src="js/bank.js"></script>
+     <script src="js/widthdarw.js"></script>
+</body>
+</html>
